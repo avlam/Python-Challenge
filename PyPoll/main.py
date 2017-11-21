@@ -46,7 +46,7 @@ outputText.append(lineBreak)
 outputText.append('Total Votes: ' + str(nVotes))
 outputText.append(lineBreak)
 for k,v in candidates.items():
-    outputText.append(k + ': ' + str(100*v/nVotes) + '% (' + str(v) + ')')
+    outputText.append(k + ': ' + str(round((100*v/nVotes),2)) + '% (' + str(v) + ')')
 outputText.append(lineBreak)
 outputText.append('Winner: ' + winner)
 outputText.append(lineBreak)
