@@ -43,7 +43,9 @@ with open(filePath,'r',newline='') as fileData:
         State = row[4]
         outDOB = templateDOB.format(DOB[1],DOB[2],DOB[0])
         outSSN = templateSSN.format(SSN[2])
-        outputText.append(templateOut.format(empID,names[0],names[1],outDOB,outSSN,SA.us_state_abbrev[State]))
+        outputText.append(templateOut.format(
+            empID,names[0],names[1],outDOB,outSSN,SA.us_state_abbrev[State]
+            ))
 
 
 #for k,v in SA.us_state_abbrev.items():
