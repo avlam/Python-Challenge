@@ -46,7 +46,8 @@ with open(filePath,'r',newline='') as fileData:
         outputText.append(templateOut.format(
             empID,names[0],names[1],outDOB,outSSN,SA.us_state_abbrev[State]
             ))
-
+# append sourcefile 
+outputText.append('\n \n \nSource file: ' + filePath)
 
 #for k,v in SA.us_state_abbrev.items():
     #print(k + ': ' + v)
@@ -59,4 +60,4 @@ with open(fileOutput,'w') as fileOut:
         #print(line)
         fileOut.write(line + '\n')
 
-outputText.append('\n \n \nSource file: ' + filePath)
+
